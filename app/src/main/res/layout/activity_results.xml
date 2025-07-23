@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>  <!-- THIS MUST BE THE VERY FIRST LINE, EXACTLY AS IS -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ResultsActivity">
+
+    <!-- All your other TextViews, Buttons, etc. go here -->
+    <!-- Make sure no other <?xml ... ?> tags are inside here -->
+
+    <TextView
+        android:id="@+id/textViewResultsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculation Results"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/textViewBmiLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your BMI:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewResultsTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/textViewBmiValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="24.5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/textViewBmiLabel"
+        app:layout_constraintStart_toEndOf="@id/textViewBmiLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewOtherMetricLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other Info:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewBmiLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewOtherMetricValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Processed: Your Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/textViewOtherMetricLabel"
+        app:layout_constraintStart_toEndOf="@id/textViewOtherMetricLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"/>
+
+    <Button
+        android:id="@+id/buttonCloseResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

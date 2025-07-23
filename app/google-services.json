@@ -12,7 +12,20 @@
           "package_name": "com.yourdomain.healthplus"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "YOUR_ANDROID_OAUTH_CLIENT_ID.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yourdomain.healthplus",
+            "certificate_hash": "YOUR_SHA1_FINGERPRINT_LOWERCASE_NO_COLONS"
+          }
+        },
+        {
+          "client_id": "YOUR_NEW_WEB_CLIENT_ID",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAoL0-0su4jz0XsILOqluZZ_lEtxV2m6U8"
